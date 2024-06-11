@@ -27,3 +27,4 @@ E:\MEUS PROJETOS\Gerentarefa\obj\Debug\net8.0\refint\Gerenciador de tarefas.dll
 E:\MEUS PROJETOS\Gerentarefa\obj\Debug\net8.0\Gerenciador de tarefas.pdb
 E:\MEUS PROJETOS\Gerentarefa\obj\Debug\net8.0\Gerenciador de tarefas.genruntimeconfig.cache
 E:\MEUS PROJETOS\Gerentarefa\obj\Debug\net8.0\ref\Gerenciador de tarefas.dll
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.sourcelink.json
