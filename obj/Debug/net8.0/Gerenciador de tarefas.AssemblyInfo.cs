@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gerenciador de tarefas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b896bff171c024916688e9c4b59dbf5242f0c5a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gerenciador de tarefas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gerenciador de tarefas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
