@@ -3,22 +3,22 @@ de dados
 
 # Funcionalidades
 
-## Adicionar Tarefa
+### Adicionar Tarefa
 
 - A tarefa deve ter um título, uma descrição e uma data de vencimento.
 - A tarefa deve ser automaticamente marcada como "não concluída" ao ser criada.
 
-## Listar Tarefas
+### Listar Tarefas
 
 - Listar todas as tarefas, mostrando o título, a descrição, a data de vencimento e o status (concluída ou não).
 
-## Editar Tarefa
+### Manipular tarefas
 
-- Permitir que o usuário edite o título, a descrição e a data de vencimento de uma tarefa existente.
+ - Permitir que o usuário edite o título, a descrição e a data de vencimento de uma tarefa existente.
 
-## Remover Tarefa
+  - Remover Tarefa
 
-## Marcar como Concluída
+  - Marcar como Concluída
 
 # Persistência de Dados
 
@@ -33,7 +33,7 @@ de dados
 - **GerenciadorDeTarefas:** Gerencia a lista de tarefas e implementa as funcionalidades para adicionar, editar, remover e listar tarefas.
 - **PersistenciaDeDados:** Lida com a leitura e escrita das tarefas em um arquivo.
 
-# Interface do Usuário
+## Interface do Usuário
 
 - Utilize a console para interagir com o usuário, exibindo um menu com as opções disponíveis e capturando a entrada do usuário.
 
