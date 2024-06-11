@@ -1,0 +1,14 @@
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\bin\Debug\net8.0\Gerenciador de tarefas.exe
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\bin\Debug\net8.0\Gerenciador de tarefas.deps.json
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\bin\Debug\net8.0\Gerenciador de tarefas.runtimeconfig.json
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\bin\Debug\net8.0\Gerenciador de tarefas.dll
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\bin\Debug\net8.0\Gerenciador de tarefas.pdb
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.AssemblyInfoInputs.cache
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.AssemblyInfo.cs
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.csproj.CoreCompileInputs.cache
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.dll
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\refint\Gerenciador de tarefas.dll
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.pdb
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\Gerenciador de tarefas.genruntimeconfig.cache
+C:\Users\luanv\Documents\PROJETOS\Gerenciador de tarefas\obj\Debug\net8.0\ref\Gerenciador de tarefas.dll
