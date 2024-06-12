@@ -12,16 +12,19 @@ namespace Principal
         private string Titulo;
         static private int op { get; set; }
         static private bool X = true;
-
+        
 
         public static void Main(string[] args)
         {
+            Arquivos NovoArqTarefa = new Arquivos();
+
+            NovoArqTarefa.criarPasta();
 
 
             Console.WriteLine("Bem vindo ao gerenciador de tarefas: \n Selecione a opção que gostaria de fazer\n");
             do
             {
-                Console.WriteLine("1--- Criar uma tarefa\n2--- Ver tarefas existentes\n 3--- Modificar Tarefa\n 4--- Apagar Tarefas\n  0--- sair do aplicativo ");
+                Console.WriteLine("1--- Criar uma tarefa\n2--- Ver tarefas existentes\n3--- Modificar Tarefa\n4--- Apagar Tarefas\n  0--- sair do aplicativo ");
                 op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -32,7 +35,7 @@ namespace Principal
                         break;
 
                     case 1:
-                        Arquivos NovoArqTarefa = new Arquivos();
+                        
                         Console.WriteLine("Escreva o titulo da tarefa a ser anotado:");
                         NovoArqTarefa.criarArquivo();
                         break;
@@ -58,7 +61,7 @@ namespace Principal
     {
         private string tituloTarefa;
         private string conteudo;
-        public const string Diretoriobase = @"E:\Tarefas-gerentarefas";
+        public const string Diretoriobase = @"C:\Tarefas-gerentarefas";
 
         // Metodo que cria a pasta
         public void criarPasta()
@@ -119,16 +122,15 @@ namespace Principal
             do{
                 
             tituloTarefa = AdicionarTitulo();
-            string CaminhoArquivo = Path.Combine(Diretoriobase, tituloTarefa + ".txt");
-                if (File.Exists(tituloTarefa))
+            string CaminhoArquivo = Path.Combine(Diretoriobase, tituloTarefa +".txt");
+                if (File.Exists(CaminhoArquivo))
                 {
-                   
                     File.Delete(CaminhoArquivo);
                     break;
                 }
                 else
                 {
-                    Console.WriteLine(" o arquivo não existe");
+                    Console.WriteLine("o arquivo não existe");
                     Console.WriteLine(CaminhoArquivo);
 
                 }
