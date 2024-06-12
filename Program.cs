@@ -12,7 +12,7 @@ namespace Principal
         private string Titulo;
         static private int op { get; set; }
         static private bool X = true;
-        
+
 
         public static void Main(string[] args)
         {
@@ -24,8 +24,9 @@ namespace Principal
             Console.WriteLine("Bem vindo ao gerenciador de tarefas: \n Selecione a opção que gostaria de fazer\n");
             do
             {
-                Console.WriteLine("1--- Criar uma tarefa\n2--- Ver tarefas existentes\n3--- Modificar Tarefa\n4--- Apagar Tarefas\n  0--- sair do aplicativo ");
+                Console.WriteLine("1--- Criar uma tarefa\n2--- Ver tarefas existentes\n3--- Modificar Tarefa\n4--- Apagar Tarefas\n0--- sair do aplicativo ");
                 op = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
                 switch (op)
                 {
 
@@ -35,9 +36,15 @@ namespace Principal
                         break;
 
                     case 1:
-                        
+
                         Console.WriteLine("Escreva o titulo da tarefa a ser anotado:");
                         NovoArqTarefa.criarArquivo();
+                        break;
+
+                    case 2:
+
+                        Arquivos Listar = new Arquivos();
+                        Listar.ListarTarefas();
                         break;
                     case 4:
                         Arquivos Deletar = new Arquivos();
@@ -119,25 +126,58 @@ namespace Principal
 
         public void deleteTarefa()
         {
-            do{
-                
-            tituloTarefa = AdicionarTitulo();
-            string CaminhoArquivo = Path.Combine(Diretoriobase, tituloTarefa +".txt");
+            do
+            {
+                Console.WriteLine("Escreva o nome da tarefa que voce quer deletar:  ");
+                tituloTarefa = AdicionarTitulo();
+                string CaminhoArquivo = Path.Combine(Diretoriobase, tituloTarefa + ".txt");
                 if (File.Exists(CaminhoArquivo))
                 {
                     File.Delete(CaminhoArquivo);
+                    Console.WriteLine("Tarefa apagada, pressione qualquer botão para ser redirecionado a tela inicial");
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("o arquivo não existe");
-                    Console.WriteLine(CaminhoArquivo);
+                    Console.WriteLine("o arquivo não existe,");
+                    char X;
+                    
 
                 }
-            } while(true);
+            } while (true);
 
 
         }
+
+        public void ListarTarefas()
+        {
+
+            if (Directory.Exists(Diretoriobase))
+            {
+                string[] arquivos = Directory.GetFiles(Diretoriobase, "*.txt");
+                if (arquivos.Length > 0)
+                {
+                    Console.WriteLine("Tarefas salvas:");
+
+                    foreach (string arquivo in arquivos)
+                    {
+                        string titulo = Path.GetFileNameWithoutExtension(arquivo);
+                        string conteudo = File.ReadAllText(arquivo);
+                        Console.WriteLine("\n----------------------------");
+                        Console.WriteLine($"Título: {titulo}");
+                        Console.WriteLine($"Conteúdo: {conteudo}");
+                        Console.WriteLine("----------------------------\n");
+                    }
+                } 
+                else
+                {
+                    Console.WriteLine("não há arquivos salvos   ");
+                }
+            }
+        }
+
 
     }
 
