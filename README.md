@@ -20,10 +20,6 @@ de dados
 
   - Marcar como Concluída
 
-# Persistência de Dados
-
-- Salvar a lista de tarefas em um arquivo quando a aplicação for fechada.
-- Carregar a lista de tarefas do arquivo quando a aplicação for iniciada.
 
 # Estrutura do Projeto
 
@@ -31,11 +27,11 @@ de dados
 
 - **Tarefa:** Representa uma tarefa com propriedades para título, descrição, data de vencimento e status.
 - **GerenciadorDeTarefas:** Gerencia a lista de tarefas e implementa as funcionalidades para adicionar, editar, remover e listar tarefas.
-- **PersistenciaDeDados:** Lida com a leitura e escrita das tarefas em um arquivo.
-
+  
 ## Interface do Usuário
 
 - Utilize a console para interagir com o usuário, exibindo um menu com as opções disponíveis e capturando a entrada do usuário.
+
 
 # Passo a Passo
 
@@ -50,10 +46,6 @@ de dados
 ## Implementação do Gerenciador de Tarefas
 
 - Implemente a classe GerenciadorDeTarefas com métodos para adicionar, editar, remover e listar tarefas.
-
-## Persistência de Dados
-
-- Implemente a classe PersistenciaDeDados com métodos para salvar e carregar as tarefas de um arquivo.
 
 ## Interface do Usuário
 

@@ -24,6 +24,7 @@ namespace Principal
             Console.WriteLine("Bem vindo ao gerenciador de tarefas: \n Selecione a opção que gostaria de fazer\n");
             do
             {
+                Console.Clear();
                 Console.WriteLine("1--- Criar uma tarefa\n2--- Ver tarefas existentes\n3--- Modificar Tarefa\n4--- Apagar Tarefas\n0--- sair do aplicativo ");
                 op = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -111,6 +112,7 @@ namespace Principal
         }
         public string AdicionarTitulo()
         {
+            Console.WriteLine("Insira o titulo para operação");
             tituloTarefa = Console.ReadLine();
             return tituloTarefa;
 
@@ -128,7 +130,6 @@ namespace Principal
         {
             do
             {
-                Console.WriteLine("Escreva o nome da tarefa que voce quer deletar:  ");
                 tituloTarefa = AdicionarTitulo();
                 string CaminhoArquivo = Path.Combine(Diretoriobase, tituloTarefa + ".txt");
                 if (File.Exists(CaminhoArquivo))
@@ -141,9 +142,16 @@ namespace Principal
                 }
                 else
                 {
-                    Console.WriteLine("o arquivo não existe,");
-                    char X;
-                    
+                    string X;
+                    Console.WriteLine("o arquivo não existe, quer tentar buscar novamente ou retornar?(0 ou 1)");
+                    X = Console.ReadLine();
+                    if (X == "n")
+                    {
+                        break;
+
+                    }
+
+
 
                 }
             } while (true);
@@ -170,13 +178,40 @@ namespace Principal
                         Console.WriteLine($"Conteúdo: {conteudo}");
                         Console.WriteLine("----------------------------\n");
                     }
-                } 
+
+                    Buscar:
+                    Console.WriteLine("Quer fazer alguma busca ou sair da lista?");
+                    string buscar= Console.ReadLine();
+                    Console.Clear();
+                    if (buscar == "S")
+                    {
+                        string tituloB = AdicionarTitulo();
+                        foreach (string arquivo in arquivos)
+                        {
+                            string ArquivoNome=Path.GetFileNameWithoutExtension(arquivo);
+                            if(tituloB == ArquivoNome){
+                        string conteudo = File.ReadAllText(arquivo);
+                        Console.WriteLine("\n----------------------------");
+                        Console.WriteLine($"Título: {ArquivoNome}");
+                        Console.WriteLine($"Conteúdo: {conteudo}");
+                        Console.WriteLine("----------------------------\n");
+
+                            }
+                            
+                           
+                            
+
+                        }
+                        Console.ReadKey();
+                    }
+                }
                 else
                 {
                     Console.WriteLine("não há arquivos salvos   ");
                 }
             }
         }
+
 
 
     }
