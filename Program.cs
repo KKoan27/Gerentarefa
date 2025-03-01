@@ -142,16 +142,14 @@ namespace Principal
                 }
                 else
                 {
-                    string X;
+                    int X;
                     Console.WriteLine("o arquivo não existe, quer tentar buscar novamente ou retornar?(0 ou 1)");
-                    X = Console.ReadLine();
-                    if (X == "n")
+                    X = Convert.ToInt32(Console.ReadLine());
+                    if (X == 0)
                     {
                         break;
 
                     }
-
-
 
                 }
             } while (true);
@@ -213,6 +211,10 @@ namespace Principal
         }
 
 
+
+
+
+    
 
     }
 
